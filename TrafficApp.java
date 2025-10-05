@@ -22,6 +22,7 @@ public class TrafficApp {
                 System.out.println("3. Show All Signals");
                 System.out.println("4. Change All Signals");
                 System.out.println("5. Test Smart_traffic_control_system.Car Movement");
+                System.out.println("6. saveToFIle");
                 System.out.println("0. Exit");
                 System.out.print("Enter choice: ");
                 option=Integer.parseInt(input.nextLine());
@@ -46,6 +47,8 @@ public class TrafficApp {
                 case 5:
                     testCarMovement();
                     break;
+                case 6:
+                    system.saveToFile();
                 default:
                     System.out.println("Invalid choice.");
 
@@ -60,7 +63,7 @@ public class TrafficApp {
 
     }
     private static void addPedestrianSignal(){
-        System.out.println("Enter Location: ");
+        System.out.println("Enter pedestrian  Location: ");
         String location=input.nextLine();
         system.addSignal(new StandardSignal(location));
 
