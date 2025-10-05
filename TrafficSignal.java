@@ -1,6 +1,7 @@
 package Smart_traffic_control_system;
 
 public abstract class TrafficSignal {
+    private String code;
     private String location;
     private String state;
 
